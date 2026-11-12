@@ -18,8 +18,8 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Build Debug APK with Gradle
-      run: gradle assembleDebug -Pandroid.injected.signing.store.file="" -Pandroid.injected.signing.store.password="" -Pandroid.injected.signing.key.alias="" -Pandroid.injected.signing.key.password=""
+    - name: Build Unsigned APK
+      run: gradle assembleDebug
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
