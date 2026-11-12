@@ -1,0 +1,6 @@
+{
+  "name": "AutoSender",
+  "description": "Automate text messaging in Discord with random delays, customizable intervals, and Room database storage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

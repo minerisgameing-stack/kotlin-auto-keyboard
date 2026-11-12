@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AutoSender</string>
+    <string name="accessibility_service_name">AutoSender Automation Engine</string>
+    <string name="accessibility_service_description">Automates message typing and sending into Discord text inputs based on your custom random timer intervals and saved Room database messages.</string>
+</resources>
