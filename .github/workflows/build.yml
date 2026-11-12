@@ -19,11 +19,10 @@ jobs:
         java-version: '17'
 
     - name: Build Debug APK with Gradle
-      run: gradle assembleDebug -Pandroid.injected.signing.store.file=""
+      run: gradle assembleDebug -x validateSigningDebug
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
       with:
         name: app-debug
         path: app/build/outputs/apk/debug/app-debug.apk
-        
