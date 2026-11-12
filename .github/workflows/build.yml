@@ -18,8 +18,8 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Build Unsigned APK
-      run: gradle assembleDebug
+    - name: Build Debug APK (Skip KSP)
+      run: gradle assembleDebug -x kspDebugKotlin
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
